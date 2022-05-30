@@ -153,3 +153,45 @@ flex: 1;
 .card{
   padding: 2rem;
 }
+
+@media screen and (max-width : 768px) {
+  .showcase{
+    flex-direction: column;
+    padding: 20%;
+    justify-content: space-evenly;
+    min-height: 90vh;
+  }
+  .image-container {
+    min-height: 30vh;
+    justify-content: center;
+    order: 1;
+  }
+
+  .circle-3 {
+    top: 90%; 
+    left: 50%;
+    transform: translate(-50%, 50%) scale(3);
+  }
+
+  .circle-1, .circle-2 {
+    display: none;
+  }
+
+  .showcase-title {
+    font-size: 1.5rem;
+  }
+
+  .showcase.showcase-subtitle {
+    font-size: 1rem;
+    padding: 2rem 2rem;
+  }
+
+  .showcase-text {
+    padding-bottom: 0;
+    flex: 2;
+  }
+  .showcase-arrow {
+    right: 0;
+    bottom: 50%;
+  }
+}
